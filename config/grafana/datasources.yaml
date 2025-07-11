@@ -38,7 +38,7 @@ datasources:
         filterBytraceIde: false
         filterbySpanId: false
         customQuery: true
-        query: '{$${__tags}} | trace_id="$${__value.raw}"'
+        query: '{$${__tags}} | trace_id="$${__span.traceId}"'
         datasourceUid: loki
 
   - name: Mimir
